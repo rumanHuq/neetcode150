@@ -11,9 +11,8 @@ export function groupAnagrams(strs) {
   const map = {};
   for (let i = 0; i < strs.length; i++) {
     const key = strs[i].split('').toSorted().join('');
-    if (!map[key]) {
-      map[key] = [];
-    }
+    if (!map[key]) map[key] = [];
+
     map[key].push(strs[i]);
   }
 

@@ -4,7 +4,7 @@
  * 
  * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
  */
-function isAnagram(s, t) {
+export function isAnagram(s, t) {
   if (s.length !== t.length) return false;
   
   const count = {};
@@ -17,5 +17,3 @@ function isAnagram(s, t) {
   }
   return true;
 }
-
-export default isAnagram;

@@ -4,7 +4,7 @@
  * 
  * Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
  */
-function longestConsecutive(nums) {
+export function longestConsecutive(nums) {
   if (nums.length === 0) return 0;
   
   const set = new Set(nums);
@@ -23,5 +23,3 @@ function longestConsecutive(nums) {
   }
   return maxLength;
 }
-
-export default longestConsecutive;

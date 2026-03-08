@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import threeSum from "./3sum.js";
+import { threeSum } from "./3-3sum-exercise.js";
 
 describe("3Sum", () => {
   test("finds all triplets that sum to zero", () => {

@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import isPalindrome from "./valid-palindrome.js";
+import { isPalindrome } from "./1-valid-palindrome-exercise.js";
 
 describe("Valid Palindrome", () => {
   test("returns true for palindrome", () => {

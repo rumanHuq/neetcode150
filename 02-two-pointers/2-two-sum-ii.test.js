@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import twoSum from "./two-sum-ii.js";
+import { twoSum } from "./2-two-sum-ii-exercise.js";
 
 describe("Two Sum II", () => {
   test("finds two numbers that add to target", () => {

@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import isValidSudoku from "./valid-sudoku.js";
+import { isValidSudoku } from "./7-valid-sudoku-exercise.js";
 
 describe("Valid Sudoku", () => {
   test("validates correct sudoku", () => {

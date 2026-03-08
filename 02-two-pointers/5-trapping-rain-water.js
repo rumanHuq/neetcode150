@@ -4,7 +4,7 @@
  * 
  * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
  */
-function trap(height) {
+export function trap(height) {
   if (height.length === 0) return 0;
   
   let left = 0;
@@ -32,5 +32,3 @@ function trap(height) {
   }
   return water;
 }
-
-export default trap;

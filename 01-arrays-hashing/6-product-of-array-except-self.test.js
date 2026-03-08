@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import productExceptSelf from "./product-of-array-except-self.js";
+import { productExceptSelf } from "./6-product-of-array-except-self-exercise";
 
 describe("Product of Array Except Self", () => {
   test("calculates products correctly", () => {
@@ -14,3 +14,4 @@ describe("Product of Array Except Self", () => {
     expect(productExceptSelf([1, 0, 3, 4])).toEqual([0, 12, 0, 0]);
   });
 });
+

@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import { topKFrequent } from "./5-top-k-frequent-elements";
+import { topKFrequent } from "./5-top-k-frequent-elements-exercise.js";
 
 describe("Top K Frequent Elements", () => {
   test("returns top k frequent elements", () => {

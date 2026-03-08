@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import {groupAnagrams} from "./4-group-anagrams";
+import { groupAnagrams } from "./4-group-anagrams-exercise.js";
 
 describe("Group Anagrams", () => {
   test("groups anagrams together", () => {

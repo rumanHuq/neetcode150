@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import isAnagram from "./valid-anagram.js";
+import { isAnagram } from "./2-valid-anagram-exercise.js";
 
 describe("Valid Anagram", () => {
   test("returns true for anagrams", () => {

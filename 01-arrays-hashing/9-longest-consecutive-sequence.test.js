@@ -1,9 +1,9 @@
 import { describe, test, expect } from "bun:test";
-import longestConsecutive from "./longest-consecutive-sequence.js";
+import { longestConsecutive } from "./9-longest-consecutive-sequence-exercise.js";
 
 describe("Longest Consecutive Sequence", () => {
   test("finds longest consecutive sequence", () => {
-    expect(longestConsecutive([100, 4, 200, 1, 3, 2])).toBe(4);
+    expect(longestConsecutive([0,3,2,5,4,6,1,1])).toBe(7);
   });
 
   test("returns 0 for empty array", () => {

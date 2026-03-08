@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import { encode, decode } from "./encode-and-decode-strings.js";
+import { decode, encode } from "./8-encode-and-decode-strings-exercise.js";
 
 describe("Encode and Decode Strings", () => {
   test("encodes and decodes strings", () => {

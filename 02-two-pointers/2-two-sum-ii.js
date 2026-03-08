@@ -4,7 +4,7 @@
  * 
  * Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number.
  */
-function twoSum(numbers, target) {
+export function twoSum(numbers, target) {
   let left = 0;
   let right = numbers.length - 1;
   
@@ -16,5 +16,3 @@ function twoSum(numbers, target) {
   }
   return [];
 }
-
-export default twoSum;

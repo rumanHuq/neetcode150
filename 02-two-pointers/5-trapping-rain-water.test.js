@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import trap from "./trapping-rain-water.js";
+import { trap } from "./5-trapping-rain-water-exercise.js";
 
 describe("Trapping Rain Water", () => {
   test("traps water correctly", () => {

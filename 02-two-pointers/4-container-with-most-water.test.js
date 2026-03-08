@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import maxArea from "./container-with-most-water.js";
+import { maxArea } from "./4-container-with-most-water-exercise.js";
 
 describe("Container With Most Water", () => {
   test("finds maximum area", () => {
