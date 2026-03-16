@@ -1,8 +1,14 @@
 /**
  * 42. Trapping Rain Water
  * https://leetcode.com/problems/trapping-rain-water/
- * 
+ *
  * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+ *
+ * Approach: Two Pointers - Compare heights
+ * - Initialize leftMax = 0, rightMax = 0
+ * - Compare height[left] vs height[right], move pointer with smaller height
+ * - If current height >= max, update max; otherwise add water (max - height)
+ * - Time: O(n), Space: O(1)
  */
 export function trap(height) {
   if (height.length === 0) return 0;
