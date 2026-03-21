@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import lengthOfLongestSubstring from "./longest-substring-without-repeating.js";
+import {lengthOfLongestSubstring} from "./2-longest-substring-without-repeating-exercise.js";
 
 describe("Longest Substring Without Repeating Characters", () => {
   test("finds longest substring", () => {

@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import maxProfit from "./best-time-to-buy-and-sell-stock.js";
+import { maxProfit } from "./1-best-time-to-buy-and-sell-stock-exercise.js";
 
 describe("Best Time to Buy and Sell Stock", () => {
   test("calculates max profit", () => {

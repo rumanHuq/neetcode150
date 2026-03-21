@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import maxSlidingWindow from "./sliding-window-maximum.js";
+import maxSlidingWindow from "./6-sliding-window-maximum-exercise.js";
 
 describe("Sliding Window Maximum", () => {
   test("finds max values in each window", () => {

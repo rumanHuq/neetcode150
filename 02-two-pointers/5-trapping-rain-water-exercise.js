@@ -23,7 +23,6 @@ export function trap(height) {
     if (leftMax < rightMax) {
       leftPtr++;
       leftMax = Math.max(leftMax, height[leftPtr]);
-
       water+= leftMax - height[leftPtr]
     } else {
       rightPtr--;

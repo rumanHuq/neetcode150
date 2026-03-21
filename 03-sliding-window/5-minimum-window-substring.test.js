@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import minWindow from "./minimum-window-substring.js";
+import minWindow from "./5-minimum-window-substring-exercise.js";
 
 describe("Minimum Window Substring", () => {
   test("finds minimum window", () => {

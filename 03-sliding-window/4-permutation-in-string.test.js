@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import checkInclusion from "./permutation-in-string.js";
+import checkInclusion from "./4-permutation-in-string-exercise.js";
 
 describe("Permutation in String", () => {
   test("finds permutation", () => {

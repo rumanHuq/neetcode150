@@ -5,27 +5,25 @@
  * Given an integer array nums and an integer k, return the k most frequent elements.
  */
 export function topKFrequent(nums, k) {
-  const map = {};
-
-  for (let i = 0; i < nums.length; i++) {
-    const element = nums[i];
-    map[element] = map[element] === undefined ? 1 : map[element] + 1;
+  // Step 1: Count frequency of each element
+  const freq = {};
+  for (const num of nums) {
+    freq[num] = (freq[num] || 0) + 1;
   }
 
-  let result = Object.entries(map);
-  let swapped = false;
+  // Step 2: Bucket sort by frequency
+  // buckets[i] contains elements that appear i times
+  // Size is nums.length + 1 because max frequency possible is nums.length
+  const buckets = Array.from({ length: nums.length + 1 }, () => []);
+  for (const [num, count] of Object.entries(freq)) {
+    buckets[count].push(parseInt(num));
+  }
 
-  do {
-    swapped = false;
-    for (let i = 0; i < result.length - 1; i++) {
-      if (result[i][1] < result[i + 1][1]) {
-        [result[i], result[i + 1]] = [result[i + 1], result[i]];
-        swapped = true;
-      }
-    }
-  } while (swapped);
+  // Step 3: Collect elements from highest frequency buckets
+  const result = [];
+  for (let i = buckets.length - 1; i > 0 && result.length < k; i--) {
+    if (buckets[i].length > 0) result.push(...buckets[i]);
+  }
 
-  return result
-    .slice(0, k)
-    .map(([k]) => parseInt(k));
+  return result.slice(0, k);
 }

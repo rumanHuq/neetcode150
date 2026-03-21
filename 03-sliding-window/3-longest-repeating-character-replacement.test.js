@@ -1,5 +1,5 @@
 import { describe, test, expect } from "bun:test";
-import characterReplacement from "./longest-repeating-character-replacement.js";
+import {characterReplacement} from "./3-longest-repeating-character-replacement-exercise.js";
 
 describe("Longest Repeating Character Replacement", () => {
   test("finds longest repeating character", () => {
